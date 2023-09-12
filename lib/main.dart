@@ -1,5 +1,28 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(
+    MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text('I am rich')),
+          backgroundColor: Colors.blueGrey[600],
+        ),
+        backgroundColor: Colors.blueGrey[800],
+        body: Center(
+          child: Image(
+            image: AssetImage('images/diamond.png'),
+            //image: NetworkImage('https://www.ansa.it/webimages/ch_620x438/2015/8/24/e2d8ca85cd5174ff9f22f1685d525236.jpg'),
+          ),
+        ),
+      ),
+    ),
+  );
+}
+
+/*
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -40,3 +63,4 @@ class MyHomePage extends StatelessWidget {
     );
   }
 }
+*/
