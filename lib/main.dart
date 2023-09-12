@@ -32,6 +32,11 @@ class slwNomeWidget extends StatelessWidget {
             child: Text('Hello'),
             width: 100,
             height: 100,
+            //The margin of the child from the Container
+            margin: EdgeInsets.only(left: 30, top: 50),
+            //margin: EdgeInsets.fromLTRB(30, 10, 50, 20),
+            //margin: EdgeInsets.all(50),
+            //margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
           ),
         ),
       ),
