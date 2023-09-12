@@ -25,8 +25,15 @@ class slwNomeWidget extends StatelessWidget {
     return MaterialApp(
       //l'app materiale è ciò che viene eseguita dal telefono
       home: Scaffold(
-        backgroundColor: Colors.blue,
-        body: Container(),
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Container(
+            color: Colors.white,
+            child: Text('Hello'),
+            width: 100,
+            height: 100,
+          ),
+        ),
       ),
     );
   }
