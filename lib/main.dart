@@ -28,6 +28,11 @@ class slwNomeWidget extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisSize: MainAxisSize.min,
+            verticalDirection: VerticalDirection.up, //Where to begin? up - down
+            mainAxisAlignment:
+                MainAxisAlignment.spaceEvenly, //vertical alignment
+            crossAxisAlignment: CrossAxisAlignment.end, //start - center - end
             children: <Widget>[
               Container(
                 color: Colors.white,
@@ -43,11 +48,24 @@ class slwNomeWidget extends StatelessWidget {
               ),
               Container(
                 child: Text('Cont. 2'),
-                width: 120,
+                width: 150,
                 height: 100,
                 color: Colors.blue,
                 margin: EdgeInsets.only(left: 30, top: 50),
                 padding: EdgeInsets.all(30),
+              ),
+              Container(
+                child: Text('Cont. 3'),
+                width: 150,
+                height: 100,
+                color: Colors.red,
+                margin: EdgeInsets.only(left: 30, top: 50),
+                padding: EdgeInsets.all(30),
+              ),
+              Container(
+                width: double.infinity,
+                height: 10,
+                color: Colors.grey,
               )
             ],
           ),
