@@ -27,17 +27,29 @@ class slwNomeWidget extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            color: Colors.white,
-            child: Text('Hello'),
-            width: 100,
-            height: 100,
-            //The margin of the child from the Container
-            margin: EdgeInsets.only(left: 30, top: 50),
-            padding: EdgeInsets.all(30),
-            //margin: EdgeInsets.fromLTRB(30, 10, 50, 20),
-            //margin: EdgeInsets.all(50),
-            //margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+          child: Column(
+            children: <Widget>[
+              Container(
+                color: Colors.white,
+                child: Text('Cont. 1'),
+                width: 120,
+                height: 100,
+                //The margin of the child from the Container
+                margin: EdgeInsets.only(left: 30, top: 50),
+                padding: EdgeInsets.all(30),
+                //margin: EdgeInsets.fromLTRB(30, 10, 50, 20),
+                //margin: EdgeInsets.all(50),
+                //margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
+              ),
+              Container(
+                child: Text('Cont. 2'),
+                width: 120,
+                height: 100,
+                color: Colors.blue,
+                margin: EdgeInsets.only(left: 30, top: 50),
+                padding: EdgeInsets.all(30),
+              )
+            ],
           ),
         ),
       ),
