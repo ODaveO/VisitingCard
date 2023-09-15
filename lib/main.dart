@@ -1,7 +1,5 @@
 //import 'dart:html';
 
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -27,14 +25,40 @@ class slwNomeWidget extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            verticalDirection: VerticalDirection.up, //Where to begin? up - down
+          child: Row(
+            //verticalDirection:VerticalDirection.down, //Where to begin? up - down
             mainAxisAlignment:
-                MainAxisAlignment.spaceEvenly, //vertical alignment
-            crossAxisAlignment: CrossAxisAlignment.end, //start - center - end
+                MainAxisAlignment.spaceBetween, //vertical alignment
+            //crossAxisAlignment: CrossAxisAlignment.end, //start - center - end
             children: <Widget>[
               Container(
+                height: double.infinity,
+                width: 100,
+                color: Colors.red,
+              ),
+              Container(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.yellow,
+                    ),
+                    Container(
+                      height: 100,
+                      width: 100,
+                      color: Colors.green,
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                height: double.infinity,
+                width: 100,
+                color: Colors.blue,
+              ),
+              /*Container(
                 color: Colors.white,
                 child: Text('Cont. 1'),
                 width: 120,
@@ -45,28 +69,29 @@ class slwNomeWidget extends StatelessWidget {
                 //margin: EdgeInsets.fromLTRB(30, 10, 50, 20),
                 //margin: EdgeInsets.all(50),
                 //margin: EdgeInsets.symmetric(vertical: 50, horizontal: 10),
-              ),
-              Container(
+              ),*/
+              /*Container(
                 child: Text('Cont. 2'),
-                width: 150,
+                width: double.infinity,
                 height: 100,
                 color: Colors.blue,
                 margin: EdgeInsets.only(left: 30, top: 50),
                 padding: EdgeInsets.all(30),
-              ),
-              Container(
+              ),*/
+              //SizedBox(height: 10),
+              /*Container(
+                width: double.infinity,
+                height: 10,
+                color: Colors.grey,
+              ),*/
+              /*Container(
                 child: Text('Cont. 3'),
                 width: 150,
                 height: 100,
                 color: Colors.red,
                 margin: EdgeInsets.only(left: 30, top: 50),
                 padding: EdgeInsets.all(30),
-              ),
-              Container(
-                width: double.infinity,
-                height: 10,
-                color: Colors.grey,
-              )
+              )*/
             ],
           ),
         ),
